@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="mycss/thumbnail.css">
+        <link rel="stylesheet" href="mycss/date.css">
+        <link rel="stylesheet" href="mycss/heading.css">
+        <link rel="stylesheet" href="mycss/mostread.css">
+        <link rel="stylesheet" href="mycss/latest.css">
+        <link rel="stylesheet" href="mycss/footer.css">
+    <style>
+        body {
+                  align-items: center;
+                  justify-content:center;
+                  position: absolute;
+                  
+              }
+              
+              .header {
+                  margin-top: 17px;
+                  padding-top: 0%;
+                  margin-left: 37px;
+                  padding-left: 0%;
+                  margin-right: 0%;
+                  display: flex ;
+                  flex-direction: row;
+                  
+              }
+              .headerbar {
+                  width: 1411px;
+                  height: 91px;
+                  position: relative;
+                  overflow: hidden;
+  }           
+              .logo{
+                  margin-right: 30px;
+              }
+              .navtabs ul{
+              margin-top: 11px;
+              margin-left: 0%;
+              width: 547px;
+              display: flex; 
+              gap:23px;
+              flex-direction: row;
+              justify-content: space-around;
+              list-style-type: none;
+              font: 700 18px/24px "Montserrat", sans-serif;
+              text-decoration: none;
+
+
+              }
+
+
+              .navtabs ul li a{
+                text-decoration: none;
+                color: #0e7935;
+              }
+              .navtabs ul li:hover {
+                transition: 1ms;
+                background-color: #add093;
+                opacity: 1;
+                padding: 10px;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: center;
+
+              }
+              .navtabs ul li:hover a{
+                color: #ffffff;
+              }
+
+
+              .searchbar {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                position: absolute;
+                right: 20px;
+                padding-left: 0%;
+              }
+              .searchbar input[type="text"] {
+                  margin-top: 6px;
+                  right: 20px;
+                  padding: 8px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  position: relative;
+                
+              }
+              .searchbar input[type="submit"] {
+                  padding: 8px 16px;
+                  background-color: #4CAF50;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  position: relative;
+              }
+
+              .searchbar input[type="submit"]:hover {
+                  background-color: #45a049;
+              }
+              
+
+      .student    {
+          color: #ffffff;
+          text-align: center;
+          font: 700 62px/80px "Montserrat", sans-serif;
+          position: absolute;
+          left: 1100px;
+          top: 189px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  }
+
+    .back-text {
+  
+  color: #ffffff;
+  text-align: right;
+  font: var(--h-4, 600 20px/30px "Montserrat", sans-serif);
+  position: absolute;
+  left: 650px;
+  top: 400px;
+  width: 710px;
+  height: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+
+
+  .frame-4,
+  .frame-4 * {
+    box-sizing: border-box;
+  }
+  .frame-4 {
+    background: #156a3c;
+    width: 1440px;
+    height: 65px;
+    position: relative;
+    overflow: hidden;
+  }
+  .frame-5 {
+    background: #977e3c;
+    border-radius: 2px;
+    width: 245px;
+    height: 12px;
+    position: absolute;
+    left: 595px;
+    top: 53px;
+    overflow: hidden;
+  }
+  .friday-may-19-2023 {
+    color: #ffffff;
+    text-align: center;
+    font: var(--h-5, 600 16px/24px "Montserrat", sans-serif);
+    position: absolute;
+    left: 633px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+    .group-text p{
+  color: #000000;
+  text-align: left;
+  font: 500 19px/30px "Montserrat", sans-serif;
+  position: relative;
+  width: 500px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group-text h1{
+  color: #0c5413;
+  top: 0px;
+  text-align: left;
+  font: 500 19px/30px "Montserrat", sans-serif;
+  position: relative;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+  .more {
+  color: #000000;
+  text-align: center;
+  font: var(--h-4, 600 20px/30px "Montserrat", sans-serif);
+  position: relative;
+  width: 500px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+  left: 300px;
+}
+
+.image img{
+  width: 500px;
+  height: 353px;
+}
+.group-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.container-footer{
+    margin-top: 38px;
+    position: relative;
+    width: 100%;
+    height: 477px;
+    background-color: #156A3c;
+}
+
+.container-socmed-account{
+    display: inline;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.container-content{
+    display: inline;
+    position: absolute;
+    margin-top: 92px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.column-first{
+    width: 30%;
+}
+
+.contact-text{
+    color: #FFF;
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    font-family: Montserrat-semi-bold;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.column-second{
+    width: 10%;
+}
+
+.column-third{
+    width: 10%;
+}
+
+.column-fourth{
+    width: 10%;
+}
+
+
+.column-fifth{
+    width: 10%;
+}
+
+
+.column-sixth{
+    width: 10%;
+}
+
+    </style>
+
+    </head>
+    <body>
+        <div class="headerbar">
+            <div class="header">
+              <div class="logo">
+                <img src="img/logo.jpg" alt="logo" height="46px" width="171px">
+              </div>
+              <div class="nav" >
+                <div class="navtabs">
+                <ul>
+                    <li  class ="active"><a href="home.html">home </a></li>
+                    <li ><a href="index.html">News</a></li>
+                    <li ><a href="academic.html">Academic</a></li>
+                    <li ><a href="#">Research</a></li>
+                    <li ><a href="KEMAHASISWAAN.html">Student</a></li>
+                    <li ><a href="about.html">About</a></li>
+          
+                </ul>
+              </div>
+              </div>
+              <div class="searchbar">
+                <form action="#" method="get">
+                  <input type="text" name="search">
+                  <input type="submit" value="Search">
+                </form>
+              </div> 
+            </div>
+        </div>
+        <div class="background-box">
+      
+            <div class="title">
+                <div class="student">Student</div> 
+                <div class="back-text">
+                  Temukan berbagai informasi mengenai kegiatan dan pelayanan bagi mahasiswa Universitas Andalas disini. Informasi ini berguna untuk menunjang prestasi mahasiswa secara akademik dan non-akademik
+
+                </div>
+                <img src="img/background.jpg" alt="" width="1440" height="460" class="background">
+            </div>
+            </div>
+            <div class="statusbar">
+                <div class="frame-4">
+                    <div class="frame-5"></div>
+                  
+                    <div class="friday-may-19-2023">Friday, May 19, 2023</div>
+                </div>
+            </div>
+
+            <div class="container">
+              <div class="image"><img src="img/asrama2.jpg" alt="" class="img1" >
+              </div>
+               <div class="group-text">
+                <h1>LAYANAN ASRAMA</h1>
+                <p>
+                Untuk pelayanan maksimal bagi mahasiswa baru khususnya bagi yang memperoleh beasiswa KIP-Kuliah, Beasiswa Adik Papua, dan Beasiswa Asing. Universitas Andalas telah menyediakan 9 gedung asrama bagi mahasiswanya.
+                </p>
+              <div class="more">
+                <a href="#">MORE ABOUT ASRAMA></a>
+              </div>
+              </div>
+
+            </div>
+            <div class="container">
+              
+              <div class="group-text">
+                <h1>UNIT KEGIATAN MAHASISWA</h1>
+                <p>
+                  Untuk menyalurkan hobi, kreatifitas, dan aktifitas mahasiswa, di Universitas Andalas terdapat banyak pilihan Unit Kegiatan Mahasiswa, baik dalam bidang olah raga, kesenian, kepemimpinan, teknologi, maupun bidang kreatifitas lainnya.
+                </p>
+              <div class="more">
+                <a href="#">MORE ABOUT UKM></a>
+              </div>
+              </div>
+              <div class="image"><img src="img/PKM_Unand.png" alt="" class="img1">
+              </div>
+
+            </div>
+
+            <div class="container">
+              <div class="image"><img src="img/9e2da3b69f12c2eed78f14bf191f9223_L.jpg" alt="" class="img1">
+           </div>
+              <div class="group-text">
+                <h1>LAYANAN KARIR & KONSELING</h1>
+                <p>
+                Sebagai intuisi yang menghasilkan lulusan yang  bertanggung jawab dan bermoral, Universitas Andalas mendukung lulusannya melalui pelatihan-pelatihan soft skill dan informasi lowongan pekerjaan yang mutakhir.
+                Dengan begitu setiap lulusan diharapkan mampu memperpendek masa tunggu lulusan dalam mendapatkan pekerjaan.
+                </p>
+              <div class="more">
+                <a href="#">MORE ABOUT CDC></a>
+              </div>
+              </div>
+
+            </div>
+
+            <div class="container">
+              
+              <div class="group-text">
+                <h1>UPT KEWIRAUSAHAAN</h1>
+                <p>
+                  Melalui program kewirausahaannya Universitas Andalas mempersiapkan mahasiswanya dengan pengetahuan kewirausahaan sehingga mereka memiliki alternatif karir dan tidak lagi berorientasi sebagai pencari kerja (job seeker) tapi bisa menjadi pencipta lapangan kerja (job creator)
+                </p>
+              <div class="more">
+                <a href="#">MORE ABOUT UPT UNAND></a>
+              </div>
+              </div>
+              <div class="image">
+                <img src="img/DSC09930.jpg" alt="" class="img1">
+              </div>
+
+            </div>
+
+            <div class="container-footer">
+              <div class="container-socmed-account">
+                  <img src="assets/ant-design_facebook-filled.svg" alt="fb">
+                  <img src="assets/Vector.png" alt="ig" style="margin-left: 8px;" >
+                  <img src="assets/twitter.png" alt="twit", style="margin-left: 8px;">
+              </div>
+      
+              <div class="row">
+                  <div class="column-first" style="margin-top: 92px; margin-left: 32px;">
+                      <img src="assets/image 25.png" alt="logo">
+                      <img src="assets/image 31.svg" alt="motto" style="margin-top: 32px;">
+                      <div class="contact-text" style="margin-top: 28px;">
+                          <img src="assets/bx_bx-phone.svg" alt="phone" style="padding-right: 8px;">
+                          (480) 555-0103
+                      </div>
+                      <div class="contact-text" style="margin-top: 62px;">
+                          <img src="assets/carbon_send-alt.svg" alt="phone" style="padding-right: 8px;">
+                          rektor@unand.ac.id
+                      </div>
+                      <div class="contact-text" style="margin-top: 104px;">
+                          Kota Padang, Sumatra Barat, Indonesia
+                      </div>
+                  </div>
+                  <div class="column-second" style="margin-left: 76px; margin-top: 91px;">
+                      <div class="contact-text" style="color: #BDBDBD;">
+                          About
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                          Contact us
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                          Author Listing
+                      </div>
+                  </div>
+      
+                  <div class="column-third" style="margin-left: 18px; margin-top: 91px;">
+                      <div class="contact-text" style="color: #BDBDBD;">
+                          Resource
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                          Portal iLearn
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                          Direktori ejournal
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                          e-Library
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                          Repository
+                      </div>
+                  </div>
+      
+                  <div class="column-fourth" style="margin-left: 38px; margin-top: 91px;">
+                      <div class="contact-text" style="color: #BDBDBD;">
+                          Website
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                          PPIP
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                          MBKM
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                          Pendataan Tendik
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                          Direktori Dosen
+                      </div>
+                  </div>
+      
+                  <div class="column-fifth" style="margin-left: 38px; margin-top: 91px;">
+                      <div class="contact-text" style="color: #BDBDBD;">
+                          Visit Unand
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                          Academic Calendar
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                          Leadership
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                          Carreers
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                          Event
+                      </div>
+                  </div>
+      
+                  <div class="column-sixth" style="margin-left: 46px; margin-top: 92px;">
+                      <div class="contact-text" style="color: #BDBDBD;">
+                          Sistem Informasi
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                          Portal e-office
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                          MBKM
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                          Pendataan Tendik
+                      </div>
+                      <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                          Direktori Dosen
+                      </div>
+                  </div>
+      
+              </div>
+          </div>
+    </body>
+</html>

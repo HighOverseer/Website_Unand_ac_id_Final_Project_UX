@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Montserrat-semi-bold";
+    src: url(../font/montserrat-semi-bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url(../font/montserrat-bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-medium";
+    src: url(../font/montserrat-medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-light";
+    src: url(../font/Montserrat-light.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-italic";
+    src: url(../font/Montserrat-italic-400.ttf);
+}
+
+
+.navbar-nav{
+    align-content: baseline;
+    position: absolute;
+    bottom: 0;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+
+.nav-item{
+    color: #737373;
+    font-size: 18px;
+    font-family: Montserrat-semi-bold;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.container-text-over{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.navbar-brand{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.myimage{
+    object-fit: none;
+    object-position: center;
+    width: 100%;
+    height: 477px;
+}
+
+.centered-right{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    font-family: Montserrat-semi-bold;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+
+.centered-left{
+    position: absolute;
+    top: 51%;
+    left: 58.5%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: Montserrat-semi-bold;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+.container-shadow{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.22);
+    position: absolute;   
+}
+

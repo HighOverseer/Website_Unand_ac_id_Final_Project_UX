@@ -1,0 +1,59 @@
+.container-footer{
+    margin-top: 38px;
+    position: relative;
+    width: 100%;
+    height: 477px;
+    background-color: #156A3c;
+}
+
+.container-socmed-account{
+    display: inline;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.container-content{
+    display: inline;
+    position: absolute;
+    margin-top: 92px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.column-first{
+    width: 30%;
+}
+
+.contact-text{
+    color: #FFF;
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    font-family: Montserrat-semi-bold;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.column-second{
+    width: 10%;
+}
+
+.column-third{
+    width: 10%;
+}
+
+.column-fourth{
+    width: 10%;
+}
+
+
+.column-fifth{
+    width: 10%;
+}
+
+
+.column-sixth{
+    width: 10%;
+}

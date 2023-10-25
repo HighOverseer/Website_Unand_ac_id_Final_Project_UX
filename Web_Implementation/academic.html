@@ -1,0 +1,941 @@
+  <!DOCTYPE html>
+  <html>
+      <head>
+          <title>academic</title>
+          <link rel="stylesheet" type=text/css href="css/style.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+          <link rel="stylesheet" href="css/bootstrap.css">
+          <link rel="stylesheet" href="mycss/thumbnail.css">
+          <link rel="stylesheet" href="mycss/date.css">
+          <link rel="stylesheet" href="mycss/heading.css">
+          <link rel="stylesheet" href="mycss/mostread.css">
+          <link rel="stylesheet" href="mycss/latest.css">
+          <link rel="stylesheet" href="mycss/footer.css">
+          <style>
+
+              body {
+                  align-items: center;
+                  justify-content:center;
+                  position: absolute;
+                  
+              }
+              .header {
+                  margin-top: 17px;
+                  padding-top: 0%;
+                  margin-left: 37px;
+                  padding-left: 0%;
+                  margin-right: 0%;
+                  display: flex ;
+                  flex-direction: row;
+                  
+              }
+              .headerbar {
+                  width: 1411px;
+                  height: 91px;
+                  position: relative;
+                  overflow: hidden;
+  }           
+              .logo{
+                  margin-right: 30px;
+              }
+              .navtabs ul{
+              margin-top: 11px;
+              margin-left: 0%;
+              width: 547px;
+              display: flex; 
+              gap:23px;
+              flex-direction: row;
+              justify-content: space-around;
+              list-style-type: none;
+              font: 700 18px/24px "Montserrat", sans-serif;
+              text-decoration: none;
+
+
+              }
+
+
+              .navtabs ul li a{
+                text-decoration: none;
+                color: #0e7935;
+              }
+              .navtabs ul li:hover {
+                transition: 1ms;
+                background-color: #add093;
+                opacity: 1;
+                padding: 10px;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: center;
+
+              }
+              .navtabs ul li:hover a{
+                color: #ffffff;
+              }
+
+
+              .searchbar {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                position: absolute;
+                right: 20px;
+                padding-left: 0%;
+              }
+              .searchbar input[type="text"] {
+                  margin-top: 6px;
+                  right: 20px;
+                  padding: 8px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  position: relative;
+                
+              }
+              .searchbar input[type="submit"] {
+                  padding: 8px 16px;
+                  background-color: #4CAF50;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  font-size: 16px;
+                  cursor: pointer;
+                  position: relative;
+              }
+
+              .searchbar input[type="submit"]:hover {
+                  background-color: #45a049;
+              }
+              
+      .academic {
+              color: #ffffff;
+              text-align: center;
+              font: var(--h-1-5, 700 64px/80px "Montserrat", sans-serif);
+              position: absolute;
+              left: 437px;
+              top: 308px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+      .program {
+              color: #ffffff;
+              text-align: center;
+              font: var(--h-1-5, 700 64px/80px "Montserrat", sans-serif);
+              position: absolute;
+              left: 658px;
+              top: 371px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+  }
+      .and    {
+          color: #ffffff;
+          text-align: center;
+          font: 700 62px/80px "Montserrat", sans-serif;
+          position: absolute;
+          left: 789px;
+          top: 309px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  }
+
+  .frame-4,
+  .frame-4 * {
+    box-sizing: border-box;
+  }
+  .frame-4 {
+    background: #156a3c;
+    width: 1440px;
+    height: 65px;
+    position: relative;
+    overflow: hidden;
+  }
+  .frame-5 {
+    background: #977e3c;
+    border-radius: 2px;
+    width: 245px;
+    height: 12px;
+    position: absolute;
+    left: 595px;
+    top: 53px;
+    overflow: hidden;
+  }
+  .friday-may-19-2023 {
+    color: #ffffff;
+    text-align: center;
+    font: var(--h-5, 600 16px/24px "Montserrat", sans-serif);
+    position: absolute;
+    left: 633px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-side *{
+      box-sizing: border-box;
+  }
+  .left-side {
+  
+    width: 733px;
+    height: 744.88px;
+    position: relative;
+    left: 80px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .left-side h1{
+      color: #0c5413;
+      text-align: left;
+      font: 600 26px/40px "Montserrat", sans-serif;
+      position: relative;
+      width: 429px;
+      height: 164px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  .right-side h1{
+      color: #ffffff;
+      text-align: left;
+      font: 600 26px/40px "Montserrat", sans-serif;
+      position: relative;
+      width: 429px;
+      height: 164px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  .left-side p{
+      color: #000000;
+      text-align: left;
+      font: 600 19px/40px "Montserrat", sans-serif;
+      position: relative;
+      width: 482px;
+      height: 455px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+
+  .right-side *{
+      box-sizing: border-box;
+  }
+  .right-side {
+    background: #156a3c;
+    width: 733px;
+    height: 744.88px;
+    position: absolute;
+    left: 707px;
+    top: 616px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 54.73px;
+  }
+  .right-side .container{
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+      width: 557.245px;
+      height: 859px;
+      position: relative;
+      align-items: flex-start;
+
+  }
+  .right-side h2{
+      color: #ffffff;
+      text-align: left;
+      font: 600 24px "Montserrat", sans-serif;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  .right-side p{
+  color: #ffffff;
+    text-align: left;
+    font: 400 italic 18px "Montserrat", sans-serif;
+    position: relative;
+    width: 479px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  .underline1 * {
+    box-sizing: border-box;
+  }
+  .underline1 {
+      
+    position: relative;
+    overflow: visible;
+  }
+  .underline2 * {
+    box-sizing: border-box;
+  }
+  .underline2 {
+      
+    position: relative;
+    overflow: visible;
+    top:37px;
+    right: 245px;
+    padding-right: 0%;
+  }
+
+  .icon{
+      position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 46px;
+
+  }
+  .grid-container-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em; 
+    margin-top:0px;
+  }
+  .grid-container-column {
+      display: grid;
+    
+      grid-template-rows: repeat(auto-fill, minmax(160px, 1fr));
+      grid-gap:5em;
+  }
+
+  /* hover styles */
+  .faculty-listing {
+    position: relative;
+  }
+
+  .faculty-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+
+  .faculty-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+
+  .faculty-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 160px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(30, 119, 3, 0.4);
+    color: white;
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .faculty-listing:hover .faculty-title {
+    opacity: 1;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .faculty-listing:hover .faculty-image img {
+    filter: blur(2px);
+  }
+  .faculty-image img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+
+  /* for touch screen devices */
+  @media (hover: none) { 
+    .faculty-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
+
+  .group-faculty * {
+    box-sizing: border-box;
+  }
+  .group-faculty {
+    width: 203px;
+    height: 113px;
+    position: static;
+    padding-bottom: 150px;
+  }
+  .faculty1 {
+    color: #dbdbdb;
+    text-align: left;
+    font: 700 38px/36px "Montserrat", sans-serif;
+    position: relative;
+
+    left: 127px;
+    top: 40px;
+  }
+
+  .faculty2 {
+    color: #156a3c;
+    text-align: left;
+    font: 700 38px/36px "Montserrat", sans-serif;
+    position: relative;
+
+    left: 135px;
+    top: 0px; 
+
+  }
+
+  .research-sec{
+      top: 100px;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      gap: 100px;
+
+
+  }
+  .research-fill{
+      width: 521px;   
+      height: 322px;
+
+      margin-right: 262px;
+  }
+  .research-fill h1{
+    color: #000000;
+    text-align: left;
+    font: 700 40px/32px "Montserrat", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .research-fill p{
+      margin-top: 60px;
+      color: #96a28d;
+      text-align: left;
+      font: 700 19px/32px "Montserrat", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  .button1 {
+    background: #e7ffd6;
+    width: 213px;
+    height: 54px;
+    position: absolute;
+    display:inline-block;
+    border-style: none;
+    top: 250px;
+    left: 700px;
+    text-align: center;
+    font: 700 17px/24px "Montserrat", sans-serif;
+    color: #add093;
+    text-decoration: none;
+  }
+  .learn-more {
+    color: #add093;
+    text-decoration: none;
+  }
+
+  .program-sec{
+    margin-top: 100px;
+    
+  }
+  .program-sec h1{
+    color: #000000;
+    text-align: left;
+    font: 700 40px/32px "Montserrat", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom:34px ;
+}
+
+.program-sec  p{
+  margin-top: 30px;
+  color: #757575;
+  text-align: left;
+  font: 600 19px/32px "Montserrat", sans-serif;
+  position: relative;
+  width: 469px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom:30px;
+}
+
+.program-sec-img{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  align-items:center ;
+  position: relative;
+  gap: 100px;
+  left:150px  ;
+  
+}
+
+.left-side2 {
+    display: grid;
+    padding-top:100px;
+    grid-template-rows: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap:5em;
+
+
+}
+.right-side2 {
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap:5em;
+}
+.left-side2 img{
+  border-radius: 25px;
+}
+.right-side2 img{
+  border-radius: 25px;
+}
+
+.group-text {
+
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 0;
+    position: relative;
+    width: 300px;
+    height: 160px;
+    border-radius: 25px;
+    font: 600 25px/20px "Montserrat", sans-serif;
+
+    background: rgba(30, 119, 3, 0.4);
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.program-img{
+  position: absolute;
+  filter: contrast(40%);
+  filter: brightness(60%);
+
+}
+.teks1 ,.teks2 ,.teks3, .teks4{
+  position: relative;
+  
+}
+
+.text {
+  position: relative;
+  font-weight: bold;
+  text-decoration: none;
+  transition: opacity .5s;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  font: 600 25px/20px "Montserrat", sans-serif;
+  font-weight: bold;
+    text-decoration: none;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 600 19px/32px "Montserrat", sans-serif;
+    border-radius: 25px;
+ 
+}
+.group-text:hover .text {
+    opacity: 1;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .group-text:hover .group-text img {
+    filter: blur(2px);
+  }
+
+.text:hover {
+  opacity: 1;
+}
+
+          </style>
+      </head>
+      <body>
+          <div class="headerbar">
+          <div class="header">
+            <div class="logo">
+              <img src="assets/logo.png" alt="logo" height="46px" width="171px">
+            </div>
+            <div class="nav" >
+              <div class="navtabs">
+              <ul>
+                  <li  class ="active"><a href="home.html">home </a></li>
+                  <li ><a href="index.html">news</a></li>
+                  <li ><a href="academic.html">academic</a></li>
+                  <li ><a href="#">research</a></li>
+                  <li ><a href="KEMAHASISWAAN.html">student</a></li>
+                  <li ><a href="about.html">about</a></li>
+        
+              </ul>
+            </div>
+            </div>
+            <div class="searchbar">
+              <form action="#" method="get">
+                <input type="text" name="search">
+                <input type="submit" value="Search">
+              </form>
+            </div> 
+          </div>
+      </div>
+      <div class="background-box">
+      
+      <div class="title">
+          <div class="academic">academic</div><div class="and">&</div> <div class="program">program</div>
+          <img src="assets/background.png" alt="" width="1440" height="460" class="background">
+      </div>
+      </div>
+      <div class="statusbar">
+          <div class="frame-4">
+              <div class="frame-5"></div>
+            
+              <div class="friday-may-19-2023">Friday, May 19, 2023</div>
+          </div>
+      </div>
+      <div class="left-side">
+          <div class="container">
+              <h1>beragam pilihan program studi universitas andalas</h1>
+              <svg class="underline1" width="800" height="13" viewBox="0 0 800 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="212.007"y1="9.55912"x2="469.011" y2="11.5" stroke="#977E3C" stroke-width="3"/>
+              <path d="M7.5 7.5L214 6.98759" stroke="#977E3C" stroke-width="8" />
+              </svg>
+
+
+              <p>Universitas Andalas memiliki banyak pilihan program studi dan bidang keahlian yang tersebar di 15 fakultas dan program pascasarjana. Berbagai pilihan program studi terakreditasi nasional dan internasional memberikan pilihan bagi mahasiswa Universitas Andalas untuk dapat bersaing di tingkat nasional dan global.</p>
+          </div>
+      </div>
+      <div class="right-side">
+          <div class="icon">
+              <img src="assets/icon.png" alt="" height="446px" width="auto">
+          </div>  
+          <div class="container">
+          <h2>program sarjana dan diploma</h2>
+          <p>
+              Universitas Andalas menawarkan banyak program studi pilihan untuk jenjang Sarjana dan Diploma yang tersebar di 15 fakultas
+          </p>
+          <h2>Program Magister dan Doktoral</h2>
+          <p>
+              Universitas Andalas menawarkan berbagai bidang keahlian untuk studi lanjut Magister dan Doktor.
+          </p>
+          <h2>Program Profesi</h2>
+          <p>Untuk menunjang kompetensi dan daya saing lulusan, Universitas Andalas juga menyediakan pilihan Program Profesi, seperti Profesi Dokter, Apoteker, Nurse, Insinyur, dan lainnya.</p>
+            
+      </div>
+
+      </div>
+      <div class="container">
+          <div class="group-faculty">
+          <div class="faculty1">FACULTY</div>
+          <div class="faculty2">FACULTY</div>
+          </div>
+          <div class="faculty-sec">
+              <div class="grid-container-row">
+                  <div class="grid-container-column">
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                  </div>
+                  <div class="grid-container-column">
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                  </div>
+                  <div class="grid-container-column">
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                      <article class="faculty-listing">
+                          <a class="faculty-title" href="#">FTI</a>
+                          <div class="-faculty-image">
+                              <a href="#">
+                              <img width="300" height="160" src="https://th.bing.com/th/id/R.356c2f80370c06360201a7cba340e7bf?rik=NR4yrinurtnI8w&riu=http%3a%2f%2falfatih.fti.unand.ac.id%2fwp-content%2fuploads%2f2014%2f11%2fFTI-UNAND.jpg&ehk=bkULPsz0xC%2fJxp2cQsedDZ8a1aGQb61u0cCVqllQdDY%3d&risl=&pid=ImgRaw&r=0" alt="FTI">
+                                  </a>
+                          </div>
+                      </article>
+                  </div>
+
+                  </div>
+          </div>
+      </div>
+      <div class="container"> 
+      <div class="research-sec">
+          <img src="assets/material.png" alt="hijau">
+          <article class="research-fill">
+              <h1>program by research</h1>
+              <svg class="underline2" width="800" height="13" viewBox="0 0 800 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line  x1="587.993"y1="3.44088"x2="330.989"y2="1.49996" stroke="#BAD2A9" stroke-width="3"/>
+                  <path d="M792.5 5.5L586 6.01241" stroke="#BAD2A9" stroke-width="8" />
+        </svg>  
+              <p>Selain program reguler, untuk jenjang Magister dan Doktor, Universitas Andalas juga menawarkan program by research.</p>
+          </article>
+          <a href="#" class="learn-more"><button type="button" class="button1">LEARN MORE</button></a>
+      
+      </div>
+      
+  </div>
+
+      <div class="container">
+      <div class="program-sec">
+        <h1>Extra Program</h1>
+          <svg class="underline"width="800" height="13" viewBox="0 0 800 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="212.007"y1="9.55912"x2="469.011" y2="11.5" stroke="#977E3C" stroke-width="3"/>
+          <path d="M7.5 7.5L214 6.98759" stroke="#977E3C" stroke-width="8" />
+        </svg>
+        
+        
+          <p>
+              Beberapa program yang disediakan unand program tersebut ditujukan untuk menaikkan nama UNAND baik dalam maupun Luar negeri
+          </p>
+          
+          <div class="program-sec-img">
+            <div class="left-side2">
+              <div class="group-text">
+                <img src="assets/1.jpg" alt="" height="160px" width="300" class="program-img">
+                
+                <div class="text">
+                  <div class="teks1" style="color: #ffffff;">Online Learning</div>
+              
+                <div class="teks1" style="color: #C2EAA7;">Online Learning</div>
+              
+                <div class="teks1" style="color: #ffffff;">Online Learning</div>
+              
+                </div>
+              </div>
+              
+              
+              <div class="group-text">
+                <img src="assets/2.jpg" alt="" height="160px" width="300" class="program-img">
+                <div class="text">
+                <div class="teks2" style="color: #ffffff;">International Class</div>
+              
+                <div class="teks2" style="color: #C2EAA7;">International Class</div>
+              
+                <div class="teks2" style="color: #ffffff;">International Class</div>
+              </div>
+            </div>
+              
+              
+          </div>
+          <div class="right-side2">
+            <div class="group-text">
+              <img src="assets/3.jpg" alt="" height="160px" width="300" class="program-img">
+              <div class="text">
+                <div class="teks3" style="color: #ffffff;">Fastrack Program</div>
+            
+                <div class="teks3" style="color: #C2EAA7;">Fastrack Program</div>
+              
+                <div class="teks3" style="color: #ffffff;">Fastrack Program</div>
+           
+              </div>
+                 </div>
+              
+              <div class="group-text">
+                <img src="assets/4.jpg" alt="" height="160px" width="300" class="program-img">
+                <div class="text">
+                  <div class="teks4" style="color: #ffffff;">Exchange Student</div>
+              
+                  <div class="teks4" style="color: #C2EAA7;">Exchange Student</div>
+                
+                  <div class="teks4" style="color: #ffffff;">Exchange Student</div>
+             
+                </div>
+                   </div>
+              
+              
+          </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="container-footer">
+          <div class="container-socmed-account">
+              <img src="assets/ant-design_facebook-filled.svg" alt="fb">
+              <img src="assets/Vector.png" alt="ig" style="margin-left: 8px;" >
+              <img src="assets/twitter.png" alt="twit", style="margin-left: 8px;">
+          </div>
+  
+          <div class="row">
+              <div class="column-first" style="margin-top: 92px; margin-left: 32px;">
+                  <img src="assets/image 25.png" alt="logo">
+                  <img src="assets/image 31.svg" alt="motto" style="margin-top: 32px;">
+                  <div class="contact-text" style="margin-top: 28px;">
+                      <img src="assets/bx_bx-phone.svg" alt="phone" style="padding-right: 8px;">
+                      (480) 555-0103
+                  </div>
+                  <div class="contact-text" style="margin-top: 62px;">
+                      <img src="assets/carbon_send-alt.svg" alt="phone" style="padding-right: 8px;">
+                      rektor@unand.ac.id
+                  </div>
+                  <div class="contact-text" style="margin-top: 104px;">
+                      Kota Padang, Sumatra Barat, Indonesia
+                  </div>
+              </div>
+              <div class="column-second" style="margin-left: 76px; margin-top: 91px;">
+                  <div class="contact-text" style="color: #BDBDBD;">
+                      About
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                      Contact us
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                      Author Listing
+                  </div>
+              </div>
+  
+              <div class="column-third" style="margin-left: 18px; margin-top: 91px;">
+                  <div class="contact-text" style="color: #BDBDBD;">
+                      Resource
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                      Portal iLearn
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                      Direktori ejournal
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                      e-Library
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                      Repository
+                  </div>
+              </div>
+  
+              <div class="column-fourth" style="margin-left: 38px; margin-top: 91px;">
+                  <div class="contact-text" style="color: #BDBDBD;">
+                      Website
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                      PPIP
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                      MBKM
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                      Pendataan Tendik
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                      Direktori Dosen
+                  </div>
+              </div>
+  
+              <div class="column-fifth" style="margin-left: 38px; margin-top: 91px;">
+                  <div class="contact-text" style="color: #BDBDBD;">
+                      Visit Unand
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                      Academic Calendar
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                      Leadership
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                      Carreers
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                      Event
+                  </div>
+              </div>
+  
+              <div class="column-sixth" style="margin-left: 46px; margin-top: 92px;">
+                  <div class="contact-text" style="color: #BDBDBD;">
+                      Sistem Informasi
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 46px;">
+                      Portal e-office
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 80px;">
+                      MBKM
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 114px;">
+                      Pendataan Tendik
+                  </div>
+                  <div class="contact-text" style="color: #FAFAFA; margin-top: 148px;">
+                      Direktori Dosen
+                  </div>
+              </div>
+  
+          </div>
+      </div>
+
+
+      </body>
+  </html>

@@ -1,0 +1,59 @@
+.container-latest{
+    position: relative;
+    margin-left: 87px;
+    margin-top: 17px;
+}
+
+.column-image{
+    width: 50%;
+}
+
+.column-desc{
+    width: 50%;
+}
+
+.latest-title{
+    color: #000;
+    font-size: 20px;
+    font-family: Montserrat-semi-bold;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    padding-left: 8px;
+    padding-right: 45px;
+}
+
+.latest-date{
+    color: #000;
+    font-size: 16px;
+    font-family: Montserrat-italic;
+    font-style: italic;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-top: 23px;
+    padding-left: 8px;
+}
+
+.latest-desc{
+    color: #000;
+    /* h5.7 */
+    font-size: 16px;
+    font-family: Montserrat-medium;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin-top: 14px;
+    padding-left: 8px;
+    padding-right: 44px;
+}
+
+.latest-btn{
+    color: #000;
+    font-size: 13px;
+    font-family: Montserrat-medium;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
